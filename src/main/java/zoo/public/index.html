@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoológicos y Animales – Gestión</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="light">
+<header>
+    <div class="container">
+        <h1>Zoológicos y Animales</h1>
+        <nav>
+            <ul>
+                <li><a href="#zoosSection">Zoológicos</a></li>
+                <li><a href="#animalsSection">Animales</a></li>
+            </ul>
+        </nav>
+        <button id="themeToggle" class="theme-toggle">Modo Oscuro</button>
+    </div>
+</header>
+<main>
+    <!-- Sección de Zoológicos -->
+    <section id="zoosSection" class="card">
+        <div class="card-header">
+            <h2>Zoológicos del Mundo</h2>
+            <div class="controls">
+                <button id="loadZoos">Cargar Zoológicos</button>
+                <button id="toggleZooTable" onclick="toggleZooTable()">Mostrar/Ocultar Tabla</button>
+            </div>
+        </div>
+        <div class="filter">
+            <h3>Filtrar por Continente</h3>
+            <!-- Se genera con opciones fijas -->
+            <div id="filterContinentContainer"></div>
+            <button id="filterZoos">Filtrar Zoológicos</button>
+        </div>
+        <div id="zoosTableContainer" class="table-container" style="display: none;">
+            <table id="zoosTable"></table>
+        </div>
+        <div class="card-footer form">
+            <h3>Agregar Zoológico</h3>
+            <form id="addZooForm">
+                <div class="form-group">
+                    <label for="zooName">Nombre</label>
+                    <input type="text" id="zooName" placeholder="Nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="zooCity">Ciudad</label>
+                    <input type="text" id="zooCity" placeholder="Ciudad" required>
+                </div>
+                <div class="form-group">
+                    <label for="zooFoundation">Año de Fundación</label>
+                    <input type="number" id="zooFoundation" placeholder="Año de Fundación" required>
+                </div>
+                <div class="form-group">
+                    <label for="zooLocation">Continente</label>
+                    <select id="zooLocation" required></select>
+                </div>
+                <div class="form-group full-width">
+                    <button id="addZoo" type="button">Agregar Zoológico</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Sección de Animales -->
+    <section id="animalsSection" class="card">
+        <div class="card-header">
+            <h2>Animales en Zoológicos</h2>
+            <div class="controls">
+                <button id="loadAnimals">Cargar Animales</button>
+                <button id="toggleAnimalTable" onclick="toggleAnimalsTable()">Mostrar/Ocultar Tabla</button>
+            </div>
+        </div>
+        <!-- NUEVO BLOQUE: FILTRO POR ESPECIE -->
+        <div class="filter">
+            <h3>Filtrar por Especie</h3>
+            <div id="filterSpeciesContainer"></div>
+            <button id="filterAnimalsBySpecies">Filtrar Animales</button>
+        </div>
+        <div id="animalsTableContainer" class="table-container" style="display: none;">
+            <table id="animalsTable"></table>
+        </div>
+        <div class="card-footer form">
+            <h3>Agregar Animal</h3>
+            <form id="addAnimalForm">
+                <div class="form-group">
+                    <label for="animalName">Nombre</label>
+                    <input type="text" id="animalName" placeholder="Nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="animalScientificName">Nombre Científico</label>
+                    <input type="text" id="animalScientificName" placeholder="Nombre Científico" required>
+                </div>
+                <div class="form-group">
+                    <label for="animalHabitat">Hábitat</label>
+                    <input type="text" id="animalHabitat" placeholder="Hábitat" required>
+                </div>
+                <div class="form-group">
+                    <label for="animalDiet">Dieta</label>
+                    <input type="text" id="animalDiet" placeholder="Dieta" required>
+                </div>
+                <div class="form-group">
+                    <label for="animalSpecies">Especie</label>
+                    <input type="text" id="animalSpecies" placeholder="Especie" required>
+                </div>
+                <div class="form-group">
+                    <label for="animalZooId">Zoológico</label>
+                    <select id="animalZooId" required></select>
+                </div>
+                <div class="form-group full-width">
+                    <button type="button" onclick="addAnimal()">Agregar Animal</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="container">
+        <p id="status"></p>
+    </div>
+</footer>
+<script src="app.js"></script>
+<script>
+    // Alternador de tema
+    const themeToggle = document.getElementById("themeToggle");
+    themeToggle.addEventListener("click", () => {
+        const body = document.body;
+        const currentTheme = body.getAttribute("data-theme");
+        const newTheme = currentTheme === "light" ? "dark" : "light";
+        body.setAttribute("data-theme", newTheme);
+        themeToggle.textContent = newTheme === "light" ? "Modo Oscuro" : "Modo Claro";
+    });
+</script>
+</body>
+</html>

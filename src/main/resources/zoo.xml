@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<zoos>
+   <!-- Zoos -->
+   <zoo id="zoo01" location="Europe">
+      <name>Berlin Zoo</name>
+      <city>Berlin</city>
+      <foundation>1844</foundation>
+   </zoo>
+   <zoo id="zoo02" location="America">
+      <name>San Diego Zoo</name>
+      <city>San Diego</city>
+      <foundation>1916</foundation>
+   </zoo>
+   <zoo id="zoo03" location="Asia">
+      <name>Ueno Zoo</name>
+      <city>Tokyo</city>
+      <foundation>1882</foundation>
+   </zoo>
+   <zoo id="zoo04" location="Europe">
+      <name>London Zoo</name>
+      <city>London</city>
+      <foundation>1828</foundation>
+   </zoo>
+   <zoo id="zoo05" location="Oceania">
+      <name>Taronga Zoo</name>
+      <city>Sydney</city>
+      <foundation>1916</foundation>
+   </zoo>
+   <zoo id="zoo06" location="Africa">
+      <name>Johannesburg Zoo</name>
+      <city>Johannesburg</city>
+      <foundation>1904</foundation>
+   </zoo>
+   <zoo id="zoo07" location="America">
+      <name>Bronx Zoo</name>
+      <city>New York</city>
+      <foundation>1899</foundation>
+   </zoo>
+   <zoo id="zoo08" location="Asia">
+      <name>Singapore Zoo</name>
+      <city>Singapore</city>
+      <foundation>1973</foundation>
+   </zoo>
+   <zoo id="zoo09" location="Europe">
+      <name>Lisbon Biological Park</name>
+      <city>Lisbon</city>
+      <foundation>1884</foundation>
+   </zoo>
+   <zoo id="zoo10" location="America">
+      <name>Chapultepec Zoo</name>
+      <city>Mexico City</city>
+      <foundation>1923</foundation>
+   </zoo>
+   <zoo id="zoo11" location="Europe">
+      <name>Prague Zoo</name>
+      <city>Prague</city>
+      <foundation>1931</foundation>
+   </zoo>
+   <zoo id="zoo12" location="Asia">
+      <name>Shanghai Zoo</name>
+      <city>Shanghai</city>
+      <foundation>1954</foundation>
+   </zoo>
+
+   <!-- Animals -->
+   <animal id="animal01" species="Mammal" zooid="zoo01">
+      <name>Lion</name>
+      <scientific_name>Panthera leo</scientific_name>
+      <habitat>Savanna</habitat>
+      <diet>Carnivore</diet>
+   </animal>
+   <animal id="animal02" species="Bird" zooid="zoo02">
+      <name>Bald Eagle</name>
+      <scientific_name>Haliaeetus leucocephalus</scientific_name>
+      <habitat>Forests and rivers</habitat>
+      <diet>Carnivore</diet>
+   </animal>
+   <animal id="animal03" species="Reptile" zooid="zoo03">
+      <name>Komodo Dragon</name>
+      <scientific_name>Varanus komodoensis</scientific_name>
+      <habitat>Tropical islands</habitat>
+      <diet>Carnivore</diet>
+   </animal>
+   <animal id="animal04" species="Mammal" zooid="zoo04">
+      <name>African Elephant</name>
+      <scientific_name>Loxodonta africana</scientific_name>
+      <habitat>Savanna and forests</habitat>
+      <diet>Herbivore</diet>
+   </animal>
+   <animal id="animal05" species="Mammal" zooid="zoo05">
+      <name>Red Kangaroo</name>
+      <scientific_name>Macropus rufus</scientific_name>
+      <habitat>Deserts and grasslands</habitat>
+      <diet>Herbivore</diet>
+   </animal>
+   <animal id="animal06" species="Mammal" zooid="zoo06">
+      <name>Giraffe</name>
+      <scientific_name>Giraffa camelopardalis</scientific_name>
+      <habitat>Savanna</habitat>
+      <diet>Herbivore</diet>
+   </animal>
+   <animal id="animal07" species="Amphibian" zooid="zoo07">
+      <name>Strawberry Poison Frog</name>
+      <scientific_name>Oophaga pumilio</scientific_name>
+      <habitat>Tropical rainforests</habitat>
+      <diet>Insectivore</diet>
+   </animal>
+   <animal id="animal08" species="Bird" zooid="zoo08">
+      <name>Blue-and-Yellow Macaw</name>
+      <scientific_name>Ara ararauna</scientific_name>
+      <habitat>Tropical rainforests</habitat>
+      <diet>Frugivore</diet>
+   </animal>
+   <animal id="animal09" species="Reptile" zooid="zoo09">
+      <name>Green Anaconda</name>
+      <scientific_name>Eunectes murinus</scientific_name>
+      <habitat>Wetlands and rivers</habitat>
+      <diet>Carnivore</diet>
+   </animal>
+   <animal id="animal10" species="Mammal" zooid="zoo10">
+      <name>Giant Panda</name>
+      <scientific_name>Ailuropoda melanoleuca</scientific_name>
+      <habitat>Bamboo forests</habitat>
+      <diet>Herbivore</diet>
+   </animal>
+   <animal id="animal11" species="Bird" zooid="zoo11">
+      <name>King Penguin</name>
+      <scientific_name>Aptenodytes patagonicus</scientific_name>
+      <habitat>Cold coasts</habitat>
+      <diet>Carnivore</diet>
+   </animal>
+   <animal id="animal12" species="Mammal" zooid="zoo12">
+      <name>Bengal Tiger</name>
+      <scientific_name>Panthera tigris tigris</scientific_name>
+      <habitat>Jungles and mangroves</habitat>
+      <diet>Carnivore</diet>
+   </animal>
+
+   <!-- Conservation Statistics -->
+   <conservation_statistic animalid="animal01" year="2023">
+      <population_in_wild>20000</population_in_wild>
+      <population_in_captivity>500</population_in_captivity>
+      <status>Vulnerable</status>
+   </conservation_statistic>
+   <conservation_statistic animalid="animal02" year="2023">
+      <population_in_wild>70000</population_in_wild>
+      <population_in_captivity>300</population_in_captivity>
+      <status>Least Concern</status>
+   </conservation_statistic>
+   <conservation_statistic animalid="animal03" year="2023">
+      <population_in_wild>1400</population_in_wild>
+      <population_in_captivity>70</population_in_captivity>
+      <status>Endangered</status>
+   </conservation_statistic>
+   <conservation_statistic animalid="animal10" year="2023">
+      <population_in_wild>1864</population_in_wild>
+      <population_in_captivity>600</population_in_captivity>
+      <status>Vulnerable</status>
+   </conservation_statistic>
+</zoos>
